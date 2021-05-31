@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req, res) => {
-    res.send("Parabéns você chegou até aqui.")
+    res.send("Bem-vindo, chegamos até esse ponto.")
 })
 
 require("./controllers/login")(app)
