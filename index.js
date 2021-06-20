@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req, res) => {
-    res.send("Bem-vindo, chegamos até esse ponto.")
+    res.send("<h3>Victor Felix 010618011.</h3>")
 })
 
 require("./controllers/login")(app)
@@ -20,9 +20,10 @@ require("./controllers/produtos")(app)
 
 
 app.use((req, res) => {
-    res.send("Página não encontrada")
+    res.send("Page not found ")
 })
 
 app.listen(process.env.PORT || 80, () => {
-    console.log("servidor online")
+    console.log("Server ON")
 })
+
